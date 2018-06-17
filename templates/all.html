@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+    <ul>
+        {% for d in data %}
+            <li>{{ d.name }} | {{ d.description }} | {{ d.created }} | {{ d.updated }}</li>
+        {% endfor %}
+    </ul>
+{% endblock content %}
